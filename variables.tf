@@ -27,6 +27,13 @@ variable "custom_lambda_name" {
   default     = ""
 }
 
+variable "python_runtime" {
+  description = "Lambda Function Python Runtime version"
+  type        = string
+  default     = "python3.14"
+}
+
+
 variable "condition" {
   description = "Required conditions to enforce on the policy."
   type        = map(string)
