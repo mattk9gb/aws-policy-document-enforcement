@@ -29,6 +29,7 @@ variable "custom_lambda_name" {
 
 variable "python_runtime" {
   description = "Lambda Function Python Runtime version"
+  type        = string
   default     = "python3.14"
 }
 
